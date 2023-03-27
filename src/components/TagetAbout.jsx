@@ -1,5 +1,4 @@
 import React from "react";
-import linea from "../assets/img/linea.png";
 
 export const TagetAbout = ({ profesion, name, lastname, description, img, linkedin, github }) => {
   return (

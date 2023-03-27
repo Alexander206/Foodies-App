@@ -1,14 +1,14 @@
-import React from "react";
-import { Header } from "../components/Header.jsx";
-import { Footer } from "../components/Footer.jsx";
-import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
+import React, { useContext } from "react";
+import { userContext } from "../routes/App";
+import { Header } from "../containers/Header.jsx";
+import { Footer } from "../containers/Footer.jsx";
 import "../styles/pages/NewRecipe.scss";
 import { CrearReceta } from "../components/CrearReceta.jsx";
 
 export const NewRecipe = () => {
+  const { user, authUser } = useContext(userContext);
+
+  console.log(user);
   return (
     <>
       <Header />

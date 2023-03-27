@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { userContext } from "../routes/App";
 
 export const NotFound = () => {
-  return (
-    <h1>NotFound</h1>
-  )
-}
+  const { user, updateUser } = useContext(userContext);
+
+  console.log(user);
+
+  return <h1>NotFound</h1>;
+};

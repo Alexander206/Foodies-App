@@ -1,11 +1,20 @@
 .body_about {
   width: 100%;
 
-  .header .navbar {
-    background-color: var(--verdeOscuro);
+  .header {
+    background-color: var(--azul);
 
-    a:hover {
-      color: var(--azul);
+    .titulo_foodiesapp span {
+      color: var(--verdeOscuro);
+    }
+
+    a:hover,
+    button:hover {
+      color: var(--verdeOscuro);
+    }
+
+    .open {
+      background-color: var(--azul);
     }
   }
 
@@ -15,9 +24,18 @@
     align-items: center;
     justify-content: center;
 
-    width: calc(100vw - 4px);
+    width: 100%;
+    min-height: calc(100vh - 7rem);
     background: url("../../assets/img/fondo_tecno_power.jpg");
-    padding-top: 6rem;
+    padding: 6rem 0;
+
+    .target:nth-child(1) {
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    .target:last-child {
+      border-radius: 0 0 2rem 2rem;
+    }
 
     .target {
       width: 90%;
@@ -74,6 +92,8 @@
         align-items: center;
         justify-content: center;
 
+        margin: 2rem 0;
+
         figure {
           display: flex;
           align-items: center;
@@ -103,6 +123,7 @@
           border-radius: 5rem;
           box-shadow: 0 0 1rem rgb(166, 166, 166);
           background-color: var(--claro);
+          font-size: 1.6rem;
           padding: 2rem;
 
           ion-icon {

@@ -1,22 +1,12 @@
 @import url("./vars.scss");
 @font-face {
-  font-family: 'Barlow';
-  src: url('../assets/font/BarlowCondensed-Bold.ttf');
+  font-family: "Barlow";
+  src: url("../assets/font/BarlowCondensed-Bold.ttf");
 }
 
 @font-face {
-  font-family: 'Caladea';
-  src: url('../assets/font/Caladea-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Barlow';
-  src: url('../assets/font/BarlowCondensed-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'Caladea';
-  src: url('../assets/font/Caladea-Regular.ttf');
+  font-family: "Caladea";
+  src: url("../assets/font/Caladea-Regular.ttf");
 }
 
 * {
@@ -34,7 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top, #b638554f, #4d172452), url('../assets/img/background.jpg') !important;
+  background: linear-gradient(to top, #b638554f, #4d172452), url("../assets/img/background.jpg") !important;
   background-position: center !important;
   background-size: cover !important;
   background-attachment: fixed !important;
@@ -44,8 +34,8 @@ body {
     margin: 0;
   }
 }
-.body_dos{
-  background: url('../assets/img/fondo_tecno_power.jpg') !important;
+.body_dos {
+  background: url("../assets/img/fondo_tecno_power.jpg") !important;
   background-position: center !important;
   background-size: cover !important;
   background-attachment: fixed !important;
@@ -60,6 +50,18 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--rojo);
   border-radius: 5px;
   height: 40%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 7rem;
 }
 
 figure {

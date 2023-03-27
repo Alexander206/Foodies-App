@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { Header } from "../components/Header.jsx";
-import { Footer } from "../components/Footer.jsx";
+import React, { useState, useEffect, useContext } from "react";
+import { userContext } from "../routes/App";
+import { Header } from "../containers/Header.jsx";
+import { Footer } from "../containers/Footer.jsx";
 import { Receta } from "../components/Receta.jsx";
 import { FormFiltro } from "../components/FormFiltro.jsx";
-import Loading__Page from "../components/Loading__Page.jsx";
-import imgCheft from "../assets/document/chef.png";
+import { LoadingPage } from "../containers/LoadingPage.jsx";
 import "../styles/pages/inicio.scss";
 
 export const Inicio = () => {
+  const { user } = useContext(userContext);
+
   const API = "https://www.themealdb.com/api/json/v2/9973533/randomselection.php";
 
   // Data de la API
@@ -144,11 +146,13 @@ export const Inicio = () => {
 
   return (
     <>
+      <LoadingPage />
       <Header />
       <main className="main_inicio">
         <section className="fondo_banner">
           <figure>
             <h1>FOODIES APP</h1>
+            <span>{user.auth ? `Welcome ${user.name}` : false}</span>
           </figure>
           <FormFiltro
             ingredients={ingredients}

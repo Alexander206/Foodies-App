@@ -1,18 +1,16 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { Header } from "../components/Header.jsx";
-import linea from "../assets/img/linea.png";
+import { Header } from "../containers/Header.jsx";
 import fondo_jeisson from "../assets/img/fondo_jeisson.png";
 import fondo_adriana from "../assets/img/fondo_adriana.png";
 import fondo_wendy from "../assets/img/fondo_wendy.png";
-import fondo_eleiza from "../assets/img/fondo_eleiza.png";
+import { LoadingPage } from "../containers/LoadingPage.jsx";
 import { TagetAbout } from "../components/TagetAbout.jsx";
-import Button from "react-bootstrap/Button";
 import "../styles/pages/sobreNosotros.scss";
 
 export const SobreNosotros = () => {
   return (
     <section className="body_about">
+      <LoadingPage />
       <Header />
       <article className="container_profile">
         <TagetAbout
@@ -50,17 +48,6 @@ export const SobreNosotros = () => {
           img={fondo_wendy}
           linkedin="https://wenaleja.github.io/bit07me/"
           github="https://github.com/wenaleja"
-        />
-        <div className="separador" />
-        <TagetAbout
-          profesion="Ingeniera Mecánica | Desarrollador Web FrontEnd"
-          name="Eleiza Esperanza"
-          lastname="Caridad de Fucci"
-          description="Pasión por la tecnología y la resolución de problemas complejos. Con mi experiencia como Ingeniera y
-                  mi formación en el desarrollo web con énfasis en React, combino habilidades técnicas y creativas."
-          img={fondo_eleiza}
-          linkedin="https://www.linkedin.com/in/eleiza-caridad/"
-          github="https://github.com/eleizac"
         />
       </article>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
