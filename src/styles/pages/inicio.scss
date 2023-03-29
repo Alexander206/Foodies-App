@@ -4,12 +4,9 @@
   align-items: center;
   justify-content: center;
 
-  width: 100vw;
+  width: 100%;
   max-width: 120rem;
-  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0);
-
-  margin-top: 5rem;
 
   .fondo_banner {
     display: flex;
@@ -21,11 +18,24 @@
     width: 100%;
     min-height: 30rem;
 
-    h1 {
-      letter-spacing: 2px;
-      color: var(--claro);
-      font-size: 4rem;
-      font-weight: bolder;
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        letter-spacing: 2px;
+        color: var(--claro);
+        font-size: 4rem;
+        font-weight: bolder;
+      }
+
+      span {
+        color: var(--claro);
+        text-align: center;
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -142,7 +152,9 @@
     grid-gap: 3rem;
     align-items: stretch;
     justify-content: space-around;
+    align-content: flex-start;
     width: 100%;
+    min-height: calc(100vh - 30rem - 7rem - 227px - 170px);
     background-color: var(--claro);
     padding: 2rem;
 
@@ -155,7 +167,6 @@
 }
 
 @media (min-width: 800px) {
-
   .main_inicio .recetas {
     display: flex;
     flex-direction: row;
@@ -165,9 +176,5 @@
     width: 100%;
     background-color: var(--claro);
     padding: 2rem;
-
-
   }
-
-
 }

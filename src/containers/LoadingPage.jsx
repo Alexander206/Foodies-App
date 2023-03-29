@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-import "../styles/components/Loading__Page.scss";
+import "../styles/containers/loadingPage.scss";
 
-const Loading__Page = () => {
-  window.addEventListener("load", () => {
+export const LoadingPage = () => {
+  useEffect(() => {
     document.querySelector(".Loading__Page").id = "pagina__cargada";
     let element = document.getElementById("pagina__cargada");
     element.addEventListener("animationend", () => {
       element.className = "Loading__Page off";
     });
-  });
+  }, []);
 
   return (
     <div className="Loading__Page" id="">
@@ -20,5 +20,3 @@ const Loading__Page = () => {
     </div>
   );
 };
-
-export default Loading__Page;

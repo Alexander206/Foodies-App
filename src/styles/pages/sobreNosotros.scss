@@ -1,218 +1,223 @@
-.titulo_profesion{
-  color: var(--azulClaro);
-  font-family: "caladea";
-  display: flex;
-  margin-top: 15rem;
-  font-size: 2rem;
-  margin-left: 4rem;
+.body_about {
+  width: 100%;
+
+  .header {
+    background-color: var(--azul);
+
+    .titulo_foodiesapp span {
+      color: var(--verdeOscuro);
+    }
+
+    a:hover,
+    button:hover {
+      color: var(--verdeOscuro);
+    }
+
+    .open {
+      background-color: var(--azul);
+    }
+  }
+
+  .container_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: calc(100vh - 7rem);
+    background: url("../../assets/img/fondo_tecno_power.jpg");
+    padding: 6rem 0;
+
+    .target:nth-child(1) {
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    .target:last-child {
+      border-radius: 0 0 2rem 2rem;
+    }
+
+    .target {
+      width: 90%;
+      max-width: 80rem;
+      background-color: var(--azul);
+      padding: 3rem;
+
+      .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        text-align: center;
+
+        .titulo_profesion {
+          color: var(--claro);
+          font-family: "caladea";
+          font-size: 2.2rem;
+          margin: 0;
+          padding: 0;
+          order: 2;
+        }
+
+        .nombre_programador {
+          color: rgb(73, 73, 73);
+          font-family: "barlow";
+          font-size: 4rem;
+          margin-left: 4rem;
+          margin: 0;
+          padding: 0;
+          order: 1;
+        }
+
+        .separador {
+          width: 90%;
+          height: 4px;
+          background-color: var(--claro);
+          order: 3;
+        }
+
+        .descripcion {
+          color: rgb(73, 73, 73);
+          font-family: "caladea";
+          font-size: 1.6rem;
+          margin: 0;
+          padding: 0;
+          order: 4;
+        }
+      }
+
+      .imagen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 2rem 0;
+
+        figure {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-height: 80%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000;
+          text-decoration: none;
+          min-width: 15rem;
+          border-radius: 5rem;
+          box-shadow: 0 0 1rem rgb(166, 166, 166);
+          background-color: var(--claro);
+          font-size: 1.6rem;
+          padding: 2rem;
+
+          ion-icon {
+            size: large;
+            color: var(--azul);
+            font-size: 3rem;
+            margin-right: 1rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
-.nombre_programador{
-  color: var(--azul);
-  font-family: "barlow";
-  font-size: 5rem;
-  margin-left: 4rem;
-}
-.img_linea{
-  margin-left: -2rem;
-  width: 70rem;
-}
-.button-style{
-  width:50%
-}
-.descripcion{
-  color: var(--claro);
-  font-family: "caladea";
-  font-size: 1.6rem;
-  margin-left: 4rem;
-}
-
-.img_jeison{
-  display: flex;
-  width: 60rem;
-  margin-left: 1rem;
-  margin-top: 5rem;
-}
-
-.img_adriana{
-  display: flex;
-  width: 58rem;
-  margin-left: 1rem;
-  margin-top: 9rem;
-}
-
-.img_wendy{
-  display: flex;
-  width: 58rem;
-  margin-left: 1rem;
-  margin-top: -6rem;
-}
-
-.img_eleiza{
-  display: flex;
-  width: 58rem;
-  margin-left: 1rem;
-  margin-top: 9rem;
-}
-
-.btn_portafolio{
-  border: none;
-  padding: 2rem;
-  border-radius: 3rem;
-  width: 40rem;
-  font-family: "barlow";
-  font-size: 2rem;
-  color: var(--azul);
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: -10rem;
-  margin-left: 4rem;
-}
-.btn_portafolio_uno{
-  border: none;
-  padding: 2rem;
-  border-radius: 3rem;
-  width: 40rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: "barlow";
-  font-size: 2rem;
-  color: var(--azul);
-  margin-left: 50rem;
-  margin-top: -10.3rem;
-}
-.a{
-  text-decoration: none;
-}
-
-ion-icon{
-  width: 5rem;
-  size: large;
-  margin-top: 0.5rem;
-}
-
-.btn_portafolio_adriana{
-  border: none;
-  padding: 2rem;
-  border-radius: 3rem;
-  width: 40rem;
-  font-family: "barlow";
-  font-size: 2rem;
-  color: var(--azul);
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: -15rem;
-  margin-left: 4rem;
-}
-.btn_portafolio_adriana_dos{
-  border: none;
-  padding: 2rem;
-  border-radius: 3rem;
-  width: 40rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: "barlow";
-  font-size: 2rem;
-  color: var(--azul);
-  margin-left: -5rem;
-  margin-top: -15rem;
-}
-
-.btn_portafolio_wendy{
-  border: none;
-  padding: 2rem;
-  border-radius: 3rem;
-  width: 40rem;
-  font-family: "barlow";
-  font-size: 2rem;
-  color: var(--azul);
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: -20rem;
-  margin-left: 4rem;
-}
-
-.btn_portafolio_wendy_tres{
-  border: none;
-  padding: 2rem;
-  border-radius: 3rem;
-  width: 40rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: "barlow";
-  font-size: 2rem;
-  color: var(--azul);
-  margin-left: -5rem;
-  margin-top: -20rem; 
-}
-
-.btn_portafolio_eleiza{
-  border: none;
-  padding: 2rem;
-  border-radius: 3rem;
-  width: 40rem;
-  font-family: "barlow";
-  font-size: 2rem;
-  color: var(--azul);
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: -20rem;
-  margin-left: 5rem;
-}
-.btn_portafolio_eleiza_cuatro{
-  border: none;
-  padding: 2rem;
-  border-radius: 3rem;
-  width: 40rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: "barlow";
-  font-size: 2rem;
-  color: var(--azul);
-  margin-left: -5rem;
-  margin-top: -20rem;
-}
-
-.informacion{
-  margin-top: 2rem;
-}
-
-.ion-icon{
-  color: var(--azul);
-}
 // Responsive
-.contenedor_completo{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-.container_uno{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-.container_tres{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
 
-.prueba{
-  border: none;
-  padding: 1rem;
-  border-radius: 2rem;
-  width: 20rem;
-  font-family: "barlow";
-  font-size: 1.6rem;
-  color: var(--azul);
+@media (min-width: 800px) {
+  .body_about {
+    .container_profile {
+      .target {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .texto {
+          padding-bottom: 8rem;
+          width: 50%;
+
+          .titulo_profesion {
+            order: 0;
+          }
+
+          .nombre_programador {
+            order: 0;
+          }
+
+          .separador {
+            order: 0;
+          }
+
+          .descripcion {
+            order: 0;
+          }
+        }
+
+        .imagen {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
+
+          figure {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: 80%;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .btns {
+          position: absolute;
+          bottom: 2rem;
+          left: -9rem;
+          width: 100%;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            text-decoration: none;
+            min-width: 15rem;
+            border-radius: 5rem;
+            box-shadow: 0 0 1rem rgb(166, 166, 166);
+            background-color: var(--claro);
+            padding: 2rem;
+
+            ion-icon {
+              size: large;
+              color: var(--azul);
+              font-size: 3rem;
+              margin-right: 1rem;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import { Header } from "../components/Header.jsx";
-import { Footer } from "../components/Footer.jsx";
+import { Header } from "../containers/Header.jsx";
+import { Footer } from "../containers/Footer.jsx";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
@@ -12,9 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 export const TableRecipes = () => {
   // Simulated Data RECIPES
-  const [recipes, setRecipes] = useState(
-    JSON.parse(localStorage.getItem("recipes"))
-  );
+  const [recipes, setRecipes] = useState(JSON.parse(localStorage.getItem("recipes")));
   const navigateTo = useNavigate();
 
   const handleDelete = (id) => {
@@ -55,20 +53,12 @@ export const TableRecipes = () => {
                     <td>{recipe.description}</td>
                     <td>
                       {" "}
-                      <Button
-                        className="button-table"
-                        variant="primary"
-                        onClick={() => handleEdit(recipe)}
-                      >
+                      <Button className="button-table" variant="primary" onClick={() => handleEdit(recipe)}>
                         Edit
                       </Button>
                       <br />
                       <br />
-                      <Button
-                        className="button-table"
-                        variant="danger"
-                        onClick={() => handleDelete(recipe.id)}
-                      >
+                      <Button className="button-table" variant="danger" onClick={() => handleDelete(recipe.id)}>
                         Delete
                       </Button>
                     </td>

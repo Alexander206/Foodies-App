@@ -57,11 +57,6 @@ export const ModalReceta = ({ id, name, video, instruction, link, ciudad }) => {
               <div className="container_location">
                 <span>Location: {ciudad}</span>
               </div>
-
-              <div className="container_btn">
-                <button>Editar</button>
-                <button>Eliinar</button>
-              </div>
             </div>
             <p>{instruction}</p>
             <p>

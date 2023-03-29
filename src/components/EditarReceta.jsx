@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import { Header } from "../components/Header.jsx";
-import { Footer } from "../components/Footer.jsx";
+import { Header } from "../containers/Header.jsx";
+import { Footer } from "../containers/Footer.jsx";
 import { useParams } from "react-router-dom";
 
 export const EditarReceta = () => {
@@ -53,7 +53,7 @@ export const EditarReceta = () => {
               type="text"
               {...register("name", {
                 required: true,
-                value: recipe.name
+                value: recipe.name,
               })}
             />
             <br />
@@ -63,7 +63,7 @@ export const EditarReceta = () => {
               type="text"
               {...register("ingredients", {
                 required: true,
-                value: recipe.ingredients
+                value: recipe.ingredients,
               })}
             />
             <br />
@@ -73,7 +73,7 @@ export const EditarReceta = () => {
               type="area"
               {...register("description", {
                 required: true,
-                value: recipe.description
+                value: recipe.description,
               })}
             />
           </article>
