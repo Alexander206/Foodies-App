@@ -36,8 +36,22 @@ export const CrearReceta = () => {
   return (
     <>
       <div className="container-create">
-        <h2 className="title_new">New Recipe</h2>
+        
+        <div className='img_cuaderno'>
+            <img className="imgrecetarios" src="/src/assets/img/recetarios.jpg" alt="" />
+        </div>
+
+        {/* <div className='row'> */}
+        <div className='form_container text-center align-middle'>
+          <article>
+          <h2 className="title_new">
+          ¿Have you already met our recipe book?
+        </h2>
+        <p className="title_new">
+          Now we invite you to share new flavors with us so that we can do it.
+        </p>
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
+          
           <article>
             <label className="title_recipe">New Recipe</label>
             <input
@@ -72,6 +86,10 @@ export const CrearReceta = () => {
             value="Add New Recipe"
           />
         </form>
+          </article>
+          {/* </div> */}
+        </div>
+
 
         {/* MODAL */}
         <Modal show={show} onHide={handleClose}>
