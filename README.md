@@ -1,4 +1,4 @@
-<h1 style="color:#DA4367">SABROSAPP</h1>
+<h1 style="color:#DA4367">FOODIES APP</h1>
 
 ## Descripción:
 
